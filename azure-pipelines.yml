@@ -31,7 +31,7 @@ jobs:
       - task: Npm@1
         inputs:
           command: 'install'
-        displayName: 'INSTALL: launch npm install'
+        displayName: 'INSTALL: launch npm install -f'
       - script: chmod +x mvnw
       - task: Npm@1
         inputs:
