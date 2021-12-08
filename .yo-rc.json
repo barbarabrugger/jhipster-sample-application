@@ -42,10 +42,12 @@
     "clientThemeVariant": "",
     "reactive": false,
     "enableGradleEnterprise": false,
-    "herokuAppName": "shielded-cliffs-19399",
-    "herokuDeployType": "git",
-    "herokuJavaVersion": "11",
-    "useOkta": false
+    "appsFolders": ["jhipster-sample-application"],
+    "directoryPath": "../",
+    "gatewayType": "SpringCloudGateway",
+    "clusteredDbApps": {},
+    "monitoring": "prometheus",
+    "jwtSecretKey": "M2Q4YzdjNDM3NGNmYjA5YTEyYjIyM2M0OTAxMzllNWQ3NGM5OWVlMmJmYjFiYWJkNmU3MzRmZWY0MDA2NTJlMDk4YjcwMjU2OTdkNjZiY2E5MWI1ZmMzMDFjNzRlNDJlMzQ4NA=="
   },
   "git-provider": "GitHub",
   "git-company": "barbarabrugger",

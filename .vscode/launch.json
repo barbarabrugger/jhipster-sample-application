@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-JhipsterSampleApplicationApp<jhipster-sample-application>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "ch.qfs.sample.JhipsterSampleApplicationApp",
+            "projectName": "jhipster-sample-application",
+            "args": ""
+        }
+    ]
+}
