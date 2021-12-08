@@ -1,0 +1,32 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Product erstellen",
+        "createOrEditLabel": "Product erstellen oder bearbeiten",
+        "search": "Suche nach Product",
+        "notFound": "Keine Products gefunden"
+      },
+      "created": "Product erstellt mit ID {{ param }}",
+      "updated": "Product aktualisiert mit ID {{ param }}",
+      "deleted": "Product gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Product {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "id": "ID",
+      "title": "Title",
+      "keywords": "Keywords",
+      "description": "Description",
+      "rating": "Rating",
+      "dateAdded": "Date Added",
+      "dateModified": "Date Modified",
+      "wishList": "Wish List",
+      "category": "Category"
+    }
+  }
+}
