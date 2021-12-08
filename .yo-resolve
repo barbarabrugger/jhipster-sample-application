@@ -1,0 +1,14 @@
+package.json skip
+src\main\docker\app.yml skip
+pom.xml skip
+src\main\docker\central-server-config\localhost-config\application.yml skip
+src\main\docker\central-server-config\docker-config\application.yml skip
+src\main\resources\config\application.yml skip
+src\main\java\ch\qfs\sample\GeneratedByJHipster.java skip
+src\main\java\ch\qfs\sample\config\CacheConfiguration.java skip
+src\test\java\ch\qfs\sample\config\TestSecurityConfiguration.java skip
+src\main\java\ch\qfs\sample\domain\User.java skip
+src\main\java\ch\qfs\sample\web\rest\UserResource.java skip
+.npmrc skip
+tsconfig.json skip
+README.md skip
