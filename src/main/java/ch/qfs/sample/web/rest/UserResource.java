@@ -1,14 +1,10 @@
 package ch.qfs.sample.web.rest;
 
-import static org.elasticsearch.index.query.QueryBuilders.*;
-
 import ch.qfs.sample.config.Constants;
 import ch.qfs.sample.security.AuthoritiesConstants;
 import ch.qfs.sample.service.UserService;
 import ch.qfs.sample.service.dto.AdminUserDTO;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 import javax.validation.constraints.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +24,7 @@ import tech.jhipster.web.util.ResponseUtil;
 /**
  * REST controller for managing users.
  * <p>
- * This class accesses the User entity, and needs to fetch its collection of authorities.
+ * This class accesses the {@link ch.qfs.sample.domain.User} entity, and needs to fetch its collection of authorities.
  * <p>
  * For a normal use-case, it would be better to have an eager relationship between User and Authority,
  * and send everything to the client side: there would be no View Model and DTO, a lot less code, and an outer-join

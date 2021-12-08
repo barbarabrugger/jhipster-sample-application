@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, useLocation } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 import LoginRedirect from 'app/modules/login/login-redirect';
@@ -10,7 +10,6 @@ import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoute from 'app/shared/error/error-boundary-route';
 import PageNotFound from 'app/shared/error/page-not-found';
 import { AUTHORITIES } from 'app/config/constants';
-import { sendActivity } from 'app/config/websocket-middleware';
 
 const Admin = Loadable({
   loader: () => import(/* webpackChunkName: "administration" */ 'app/modules/administration'),
@@ -18,10 +17,6 @@ const Admin = Loadable({
 });
 
 const Routes = () => {
-  const location = useLocation();
-  React.useEffect(() => {
-    sendActivity(location.pathname);
-  }, [location]);
   return (
     <div className="view-routes">
       <Switch>

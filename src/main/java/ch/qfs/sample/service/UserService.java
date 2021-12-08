@@ -5,7 +5,6 @@ import ch.qfs.sample.domain.Authority;
 import ch.qfs.sample.domain.User;
 import ch.qfs.sample.repository.AuthorityRepository;
 import ch.qfs.sample.repository.UserRepository;
-import ch.qfs.sample.repository.search.UserSearchRepository;
 import ch.qfs.sample.security.SecurityUtils;
 import ch.qfs.sample.service.dto.AdminUserDTO;
 import ch.qfs.sample.service.dto.UserDTO;
@@ -35,20 +34,12 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    private final UserSearchRepository userSearchRepository;
-
     private final AuthorityRepository authorityRepository;
 
     private final CacheManager cacheManager;
 
-    public UserService(
-        UserRepository userRepository,
-        UserSearchRepository userSearchRepository,
-        AuthorityRepository authorityRepository,
-        CacheManager cacheManager
-    ) {
+    public UserService(UserRepository userRepository, AuthorityRepository authorityRepository, CacheManager cacheManager) {
         this.userRepository = userRepository;
-        this.userSearchRepository = userSearchRepository;
         this.authorityRepository = authorityRepository;
         this.cacheManager = cacheManager;
     }
@@ -74,7 +65,6 @@ public class UserService {
                 }
                 user.setLangKey(langKey);
                 user.setImageUrl(imageUrl);
-                userSearchRepository.save(user);
                 this.clearUserCaches(user);
                 log.debug("Changed Information for User: {}", user);
             });

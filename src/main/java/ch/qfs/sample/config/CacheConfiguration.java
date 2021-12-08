@@ -11,9 +11,6 @@ import org.springframework.boot.info.BuildProperties;
 import org.springframework.boot.info.GitProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.context.annotation.*;
 import tech.jhipster.config.JHipsterProperties;
 import tech.jhipster.config.cache.PrefixedKeyGenerator;
@@ -51,6 +48,16 @@ public class CacheConfiguration {
             createCache(cm, ch.qfs.sample.domain.User.class.getName());
             createCache(cm, ch.qfs.sample.domain.Authority.class.getName());
             createCache(cm, ch.qfs.sample.domain.User.class.getName() + ".authorities");
+            createCache(cm, ch.qfs.sample.domain.Category.class.getName());
+            createCache(cm, ch.qfs.sample.domain.Category.class.getName() + ".products");
+            createCache(cm, ch.qfs.sample.domain.Product.class.getName());
+            createCache(cm, ch.qfs.sample.domain.Product.class.getName() + ".categories");
+            createCache(cm, ch.qfs.sample.domain.Customer.class.getName());
+            createCache(cm, ch.qfs.sample.domain.Customer.class.getName() + ".wishLists");
+            createCache(cm, ch.qfs.sample.domain.Customer.class.getName() + ".addresses");
+            createCache(cm, ch.qfs.sample.domain.Address.class.getName());
+            createCache(cm, ch.qfs.sample.domain.WishList.class.getName());
+            createCache(cm, ch.qfs.sample.domain.WishList.class.getName() + ".products");
             // jhipster-needle-ehcache-add-entry
         };
     }

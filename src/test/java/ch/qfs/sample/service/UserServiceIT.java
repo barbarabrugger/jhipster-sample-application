@@ -1,15 +1,11 @@
 package ch.qfs.sample.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
 
 import ch.qfs.sample.IntegrationTest;
 import ch.qfs.sample.config.Constants;
 import ch.qfs.sample.domain.User;
 import ch.qfs.sample.repository.UserRepository;
-import ch.qfs.sample.repository.search.UserSearchRepository;
 import ch.qfs.sample.security.AuthoritiesConstants;
 import ch.qfs.sample.service.dto.AdminUserDTO;
 import java.util.Collection;
@@ -53,14 +49,6 @@ class UserServiceIT {
 
     @Autowired
     private UserService userService;
-
-    /**
-     * This repository is mocked in the ch.qfs.sample.repository.search test package.
-     *
-     * @see ch.qfs.sample.repository.search.UserSearchRepositoryMockConfiguration
-     */
-    @Autowired
-    private UserSearchRepository mockUserSearchRepository;
 
     private User user;
 

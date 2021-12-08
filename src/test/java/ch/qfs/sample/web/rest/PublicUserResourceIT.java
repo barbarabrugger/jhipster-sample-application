@@ -9,7 +9,6 @@ import ch.qfs.sample.IntegrationTest;
 import ch.qfs.sample.config.TestSecurityConfiguration;
 import ch.qfs.sample.domain.User;
 import ch.qfs.sample.repository.UserRepository;
-import ch.qfs.sample.repository.search.UserSearchRepository;
 import ch.qfs.sample.security.AuthoritiesConstants;
 import javax.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
@@ -34,14 +33,6 @@ class PublicUserResourceIT {
 
     @Autowired
     private UserRepository userRepository;
-
-    /**
-     * This repository is mocked in the ch.qfs.sample.repository.search test package.
-     *
-     * @see ch.qfs.sample.repository.search.UserSearchRepositoryMockConfiguration
-     */
-    @Autowired
-    private UserSearchRepository mockUserSearchRepository;
 
     @Autowired
     private EntityManager em;

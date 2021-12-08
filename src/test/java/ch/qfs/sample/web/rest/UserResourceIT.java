@@ -11,7 +11,6 @@ import ch.qfs.sample.IntegrationTest;
 import ch.qfs.sample.domain.Authority;
 import ch.qfs.sample.domain.User;
 import ch.qfs.sample.repository.UserRepository;
-import ch.qfs.sample.repository.search.UserSearchRepository;
 import ch.qfs.sample.security.AuthoritiesConstants;
 import ch.qfs.sample.service.dto.AdminUserDTO;
 import ch.qfs.sample.service.dto.UserDTO;
@@ -55,14 +54,6 @@ class UserResourceIT {
 
     @Autowired
     private UserRepository userRepository;
-
-    /**
-     * This repository is mocked in the ch.qfs.sample.repository.search test package.
-     *
-     * @see ch.qfs.sample.repository.search.UserSearchRepositoryMockConfiguration
-     */
-    @Autowired
-    private UserSearchRepository mockUserSearchRepository;
 
     @Autowired
     private UserMapper userMapper;
@@ -142,8 +133,6 @@ class UserResourceIT {
     void getUser() throws Exception {
         // Initialize the database
         userRepository.saveAndFlush(user);
-
-        mockUserSearchRepository.save(user);
 
         assertThat(cacheManager.getCache(UserRepository.USERS_BY_LOGIN_CACHE).get(user.getLogin())).isNull();
 
