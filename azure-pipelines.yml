@@ -49,7 +49,7 @@ jobs:
 #        inputs:
 #          command: 'custom'
 #          customCommand: ' run ci:frontend:test'
-        displayName: 'TESTS: frontend'
+#        displayName: 'TESTS: frontend'
       - task: PublishTestResults@2
         inputs:
           testResultsFormat: 'JUnit'
