@@ -9,5 +9,5 @@ receivers:
   - name: 'webhook'
     webhook_configs:
       # For testing, create a sample alerting webhook at http://webhook.site/
-      - url: 'http://webhook.site/<UUID>'
+      - url: 'https://webhook.site/c7c0c313-d900-4e9b-92d0-7469edec948a'
         send_resolved: true

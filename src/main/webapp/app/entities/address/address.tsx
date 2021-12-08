@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link, RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps } from 'react-router-dom';
 import { Button, Input, InputGroup, FormGroup, Form, Row, Col, Table } from 'reactstrap';
+import { Link, Text } from '@fluentui/react';
+import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/Button';
 import { Translate, translate, getSortState, JhiPagination, JhiItemCount } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -125,11 +127,11 @@ export const Address = (props: RouteComponentProps<{ url: string }>) => {
       <h2 id="address-heading" data-cy="AddressHeading">
         <Translate contentKey="jhipsterSampleApplicationApp.address.home.title">Addresses</Translate>
         <div className="d-flex justify-content-end">
-          <Button className="me-2" color="info" onClick={handleSyncList} disabled={loading}>
+          <PrimaryButton className="me-2" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
             <Translate contentKey="jhipsterSampleApplicationApp.address.home.refreshListLabel">Refresh List</Translate>
-          </Button>
-          <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
+          </PrimaryButton>
+          <Link to={`${match.url}/new`} id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
             <Translate contentKey="jhipsterSampleApplicationApp.address.home.createLabel">Create new Address</Translate>
