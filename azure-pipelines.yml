@@ -45,10 +45,10 @@ jobs:
           searchFolder: '$(Build.SourcesDirectory)/target/test-results'
         condition: succeededOrFailed()
         displayName: 'TESTS: publish test results'
-      - task: Npm@1
-        inputs:
-          command: 'custom'
-          customCommand: ' run ci:frontend:test'
+#      - task: Npm@1
+#        inputs:
+#          command: 'custom'
+#          customCommand: ' run ci:frontend:test'
         displayName: 'TESTS: frontend'
       - task: PublishTestResults@2
         inputs:
