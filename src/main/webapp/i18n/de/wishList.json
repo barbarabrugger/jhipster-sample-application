@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "wishList": {
+      "home": {
+        "title": "Wish Lists",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Wish List erstellen",
+        "createOrEditLabel": "Wish List erstellen oder bearbeiten",
+        "search": "Suche nach Wish List",
+        "notFound": "Keine Wish Lists gefunden"
+      },
+      "created": "Wish List erstellt mit ID {{ param }}",
+      "updated": "Wish List aktualisiert mit ID {{ param }}",
+      "deleted": "Wish List gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Wish List {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Wish List"
+      },
+      "id": "ID",
+      "title": "Title",
+      "restricted": "Restricted",
+      "product": "Product",
+      "customer": "Customer"
+    }
+  }
+}

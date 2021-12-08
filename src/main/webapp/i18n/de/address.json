@@ -1,0 +1,30 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Address erstellen",
+        "createOrEditLabel": "Address erstellen oder bearbeiten",
+        "search": "Suche nach Address",
+        "notFound": "Keine Addresses gefunden"
+      },
+      "created": "Address erstellt mit ID {{ param }}",
+      "updated": "Address aktualisiert mit ID {{ param }}",
+      "deleted": "Address gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Address {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "city": "City",
+      "postcode": "Postcode",
+      "country": "Country",
+      "customer": "Customer"
+    }
+  }
+}
