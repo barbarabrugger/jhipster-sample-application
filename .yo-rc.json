@@ -27,7 +27,7 @@
     "clientFramework": "react",
     "jhiPrefix": "jhi",
     "withAdminUi": true,
-    "jhipsterVersion": "7.4.0",
+    "jhipsterVersion": "7.4.1",
     "skipUserManagement": true,
     "skipCheckLengthOfIdentifier": false,
     "skipFakeData": false,
