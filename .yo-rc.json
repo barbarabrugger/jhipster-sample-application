@@ -41,7 +41,11 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "herokuAppName": "shielded-cliffs-19399",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11",
+    "useOkta": false
   },
   "git-provider": "GitHub",
   "git-company": "barbarabrugger",
